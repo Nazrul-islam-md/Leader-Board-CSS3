@@ -1,6 +1,11 @@
 /* Poppins Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 /* Utilities or Common Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: #F3F1FF;
     font-family: 'Poppins', sans-serif;
@@ -21,6 +26,42 @@ main{
 hr{
     border: 1px solid #D1D1D1;
     margin-bottom: 27px;
+}
+/* Tob Bar Style */
+.top-bar{
+    background-color: #562EFF;
+    height: 84px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.idea{
+    display: flex;
+    align-items: center;
+}
+.idea img{
+    width: 41px;
+    height: 51px;
+}
+.idea h3{
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-left: 10px;
+}
+.menu{
+    display: flex;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin-top: 12px;
+}
+ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 20px;
 }
 /* Top Players Style */
 .player-title{
@@ -121,7 +162,6 @@ hr{
     background-color: #FFE4E8;
     border-radius: 15px;
     padding: 0 4px;
-    margin-right: 20px;
 }
 /*---------------------
      Responsiveness 
@@ -136,6 +176,9 @@ hr{
     }
     .player{
         flex-direction: column;
+    }
+    .course-duration{
+        margin-right: 20px;
     }
 }
 /* Responsive for tablet device */
@@ -154,5 +197,8 @@ hr{
     }
     .course-details{
         margin-right: 90px;
+    }
+    .course-duration{
+        margin-right: 20px;
     }
 }
